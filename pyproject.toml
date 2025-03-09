@@ -1,13 +1,24 @@
 [project]
 name = "tibiatools"
-version = "0.1.0"
+version = "1.0.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = ["click>=8.1.8"]
+classifiers = [
+    "Intended Audience :: Gamers",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Gaming :: Tools :: Useful scripts"
+]
 
 [dependency-groups]
 dev = ["isort>=6.0.1", "mypy>=1.15.0", "ruff>=0.9.10"]
 
 [project.scripts]
 exercise = "tibiatools.main:exercise_weapon_burnout_time"
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
