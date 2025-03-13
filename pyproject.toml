@@ -13,13 +13,12 @@ requires-python = ">=3.12"
 dependencies = [
     "click>=8.1.8",
     "duckdb>=1.2.1",
-    "httpx>=0.28.1",
     "loguru>=0.7.3",
     "lxml>=5.3.1",
     "pandas>=2.2.3",
     "pip>=25.0.1",
     "spacy>=3.8.4",
-    "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl"
+    "en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
 ]
 classifiers = [
     "Intended Audience :: Gamers",
@@ -28,7 +27,12 @@ classifiers = [
 ]
 
 [dependency-groups]
-dev = ["isort>=6.0.1", "mypy>=1.15.0", "ruff>=0.9.10"]
+dev = [
+    "isort>=6.0.1",
+ "mypy>=1.15.0",
+ "pytest>=8.3.5",
+ "ruff>=0.9.10",
+]
 
 [project.scripts]
 exercise = "tibiatools.main:exercise_weapon_burnout_time"
