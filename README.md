@@ -2,12 +2,17 @@
 
 A collection of simple tools for Tibia, a MMORPG by CipSoft.
 
-Q: Is it legal?
-A: Yes, it is. It does not interact with the game client or server in any way. - look at the code.
-Q: Is it safe?
-A: Yes, it is. It does not interact with the game client or server in any way. - look at the code.
-Q: Can I get banned for using it?
-A: No, you can't. It does not interact with the game client or server in any way. - look at the code.
+#### Is it legal?
+
+Yes, it is. It does not interact with the game client or server in any way. - look at the code.
+
+#### Is it safe?
+
+Yes, it is. It does not interact with the game client or server in any way. - look at the code.
+
+#### Can I get banned for using it?
+
+No, you can't. It does not interact with the game client or server in any way. - look at the code.
 
 ## Tools
 
