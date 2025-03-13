@@ -7,8 +7,8 @@ name = "tibiatools"
 version = "1.0.0"
 description = "A collection of tools for the MMORPG Tibia"
 authors = [{ name = "Jan Wądołowski" }]
-license = "MIT"
-readme = "README.md"
+keywords = ["Tibia", "MMO", "MMORPG"]
+readme = { file = "README.md", content-type = "text/markdown" }
 requires-python = ">=3.12"
 dependencies = [
     "click>=8.1.8",
@@ -32,6 +32,9 @@ dev = ["isort>=6.0.1", "mypy>=1.15.0", "ruff>=0.9.10"]
 
 [project.scripts]
 exercise = "tibiatools.main:exercise_weapon_burnout_time"
+
+[project.urls]
+Repository = "https://github.com/kodzonko/tibiatools"
 
 [tool.black]
 line-length = 88
