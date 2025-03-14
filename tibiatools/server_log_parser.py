@@ -78,6 +78,15 @@ def extract_actor(text: str) -> str:
     return "OTHER"
 
 
+def extract_points(text: str) -> int | None:
+    """Extract points from a given text."""
+    # Find the first number in the text
+    match = re.search(r"\d+", text)
+    if match:
+        return int(match.group())
+    return None
+
+
 def parse_server_log(file_path: str) -> pd.DataFrame:
     """Parse Tibia combat log file into a structured DataFrame."""
 
@@ -111,6 +120,8 @@ def parse_server_log(file_path: str) -> pd.DataFrame:
     )
 
     df["actor"] = df["message"].apply(extract_actor)
+
+    df["points"] = df["message"].apply(extract_points)
 
     return df
 
